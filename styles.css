@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+}
+#header-img {
+  width: 60px;
+  height: 60px;
+}
+header {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#info {
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+iframe {
+  height: 40vh;
+  width: auto;
+}
+#form {
+  /* height: 30vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  margin-bottom: 10vh;
+}
+h1 {
+  margin-bottom: 2vh;
+}
+input {
+  margin-bottom: 2vh;
+  height: 5vh;
+  width: 30vh;
+}
+#submit {
+  width: 15vh;
+  background-color: rgb(204, 204, 94);
+  font-weight: bold;
+}
+.cards {
+  /* height: 32vh; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  margin: 10vh 0vw;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 18vw;
+  height: 32vh;
+  margin: 2vh;
+  border: 1px solid rgb(204, 204, 94);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(204, 204, 94);
+  overflow: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+footer *{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    height: 10vh;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer > div >ul{
+    display: flex;
+}
+footer > div > ul > li{
+    margin: 0vh 3vw;
+}
+footer > div > p{
+    margin: 0vh 3vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .cards {
+    /* height: 70vw; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10vh 0vw;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 25vh;
+    width: 50vw;
+    overflow: auto;
+    /* align-items: center; */
+    /* margin: 5vh 0vw; */
+  }
+  iframe {
+    height: 30vh;
+    width: auto;
+  }
+  footer{
+    height: 8vh;
+  }
+}
